@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: reur
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-nrem-tenant/byoc-app-szbz/reur@sha256:464f996b1dec652f236e449459586990c99ec8414880a8f63ac68ec7535511fc
+        name: my-java-quarkus
+        resources: {}
+status: {}
