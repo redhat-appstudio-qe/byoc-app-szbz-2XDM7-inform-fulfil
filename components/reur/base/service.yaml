@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: reur
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: reur
+    app.kubernetes.io/part-of: byoc-app-szbz
+  name: reur
+spec:
+  ports:
+  - name: "8081"
+    port: 8081
+    targetPort: 8081
+  selector:
+    app.kubernetes.io/instance: reur
+status:
+  loadBalancer: {}
