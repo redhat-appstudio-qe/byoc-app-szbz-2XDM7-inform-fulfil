@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: reur
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-nrem-tenant/byoc-app-szbz/reur@sha256:464f996b1dec652f236e449459586990c99ec8414880a8f63ac68ec7535511fc
         name: my-java-quarkus
         ports:
         - containerPort: 8081
